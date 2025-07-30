@@ -65,7 +65,7 @@ export default function Footer() {
                 </a>
                 <a className="flex items-center" href="tel:+5554994023003">
                   <Phone className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-300">(54) 99940 23003</span>
+                  <span className="text-gray-300">(54) 9940 23003</span>
                 </a>
                 <a
                   className="flex items-center"
