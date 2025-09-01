@@ -16,7 +16,12 @@ export default function FinalCTA() {
         </p>
 
         <div className="mb-8">
-          <Button variant={"outline"}>
+          <Button
+            variant={"outline"}
+            onClick={() => {
+              window.location.href = "/#planos";
+            }}
+          >
             Comece hoje mesmo e leve sua barbearia para o próximo nível.
           </Button>
         </div>
