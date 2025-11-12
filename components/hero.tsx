@@ -6,8 +6,27 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="pt-20 pb-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden min-h-screen flex items-center"
+      className="pt-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-visible"
     >
+      {/* Banner images */}
+      <div 
+        className="w-full cursor-pointer relative z-10 mb-8"
+        onClick={() => {
+          window.open("https://www.barbeariaderespeito.com.br/checkout/2?version=B", "_blank");
+        }}
+      >
+        <img
+          src="/banner-desktop.jpeg"
+          alt="Banner Barbearia de Respeito"
+          className="w-full h-auto hidden md:block"
+        />
+        <img
+          src="/banner-mobile.jpeg"
+          alt="Banner Barbearia de Respeito"
+          className="w-full h-auto block md:hidden"
+        />
+      </div>
+
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-color/10 via-transparent to-blue-500/5"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary-color/10 rounded-full blur-3xl animate-pulse"></div>
@@ -18,8 +37,8 @@ export default function Hero() {
       <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-500/50 rounded-full animate-ping delay-500"></div>
       <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-primary-color/50 rounded-full animate-ping delay-1000"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-4 relative z-10 flex-1 flex items-center">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full">
           {/* Coluna de texto - ocupa 7 colunas no desktop */}
           <div className="lg:col-span-7 max-w-2xl animate-in fade-in-50 slide-in-from-left-10 duration-1000">
             {/* Badge de credibilidade */}
