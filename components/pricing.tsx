@@ -15,7 +15,7 @@ const plans = [
     ],
     buttonText: "Contratar",
     info: "*No primeiro mês no cartão de crédito ou PIX. Após R$ 69,90 por mês",
-    url: "https://www.barbeariaderespeito.com.br/checkout/2?version=B",
+    url: "https://contrate.barbeariaderespeito.com.br/checkout/2?version=B",
   },
   {
     name: "Plano Anual",
@@ -31,7 +31,7 @@ const plans = [
     buttonText: "Contratar",
     buttonVariant: "outline" as const,
     featured: true,
-    url: "https://www.barbeariaderespeito.com.br/checkout/4?version=B",
+    url: "https://contrate.barbeariaderespeito.com.br/checkout/4?version=B",
   },
 ];
 
