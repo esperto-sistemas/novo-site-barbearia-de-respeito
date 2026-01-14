@@ -9,6 +9,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/checkout/:id",
+        destination: "https://contrate.barbeariaderespeito.com.br/checkout/:id",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
@@ -23,10 +32,10 @@ const nextConfig = {
         source: "/ingest/decide",
         destination: "https://us.i.posthog.com/decide",
       },
-    ]
+    ];
   },
   // This is required to support PostHog trailing slash API requests
   skipTrailingSlashRedirect: true,
-}
+};
 
-export default nextConfig
+export default nextConfig;
