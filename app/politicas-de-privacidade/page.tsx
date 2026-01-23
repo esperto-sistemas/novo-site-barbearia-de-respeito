@@ -11,7 +11,7 @@ export default function PoliticasDePrivacidadePage() {
     <div className="min-h-screen bg-[#0a0a0a]">
       <Header />
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 pt-24 pb-16">
         <Link
           href="/"
           className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-8"

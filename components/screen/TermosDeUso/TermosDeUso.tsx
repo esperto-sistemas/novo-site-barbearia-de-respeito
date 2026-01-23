@@ -17,7 +17,9 @@ export default function TermosDeUso() {
       </div>
       <div className="flex flex-col gap-8 border-t border-gray-700 pt-8 mt-8">
         <div>
-          <p className="font-semibold">VP TESTES, ANÁLISES TÉCNICAS E GERENCIAMENTO DE PROJETOS LTDA</p>
+          <p className="font-semibold">
+            VP TESTES, ANÁLISES TÉCNICAS E GERENCIAMENTO DE PROJETOS LTDA
+          </p>
           <p className="font-semibold">INTERVENIENTES:</p>
         </div>
         <div>
