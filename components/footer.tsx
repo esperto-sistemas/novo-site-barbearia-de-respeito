@@ -85,13 +85,13 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex gap-6 text-sm">
               <a
-                href="https://www.barbeariaderespeito.com.br/termos-de-uso"
+                href="/termos-de-uso"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Termos de uso
               </a>
               <a
-                href="https://www.barbeariaderespeito.com.br/politicas-de-privacidade"
+                href="/politicas-de-privacidade"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Política de privacidade
