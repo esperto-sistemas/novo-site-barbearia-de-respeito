@@ -33,7 +33,7 @@ export default function RootLayout({
               fbq('track', 'PageView');
             `,
           }}
-        ></script>
+        />
         <noscript>
           <img
             height="1"
