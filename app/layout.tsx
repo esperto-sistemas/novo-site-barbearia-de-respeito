@@ -45,6 +45,27 @@ export default function RootLayout({
       </head>
       <body>
         <PostHogProvider>{children}</PostHogProvider>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.getElementById('mensal')?.addEventListener('click', function() {
+                fbq('track', 'InitiateCheckout', {
+                  content_name: 'Plano Mensal',
+                  value: 29.90,
+                  currency: 'BRL'
+                });
+              });
+
+              document.getElementById('anual')?.addEventListener('click', function() {
+                fbq('track', 'InitiateCheckout', {
+                  content_name: 'Plano Anual',
+                  value: 59.00,
+                  currency: 'BRL'
+                });
+              });
+            `,
+          }}
+        />
       </body>
     </html>
   );

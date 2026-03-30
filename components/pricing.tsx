@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const plans = [
   {
     name: "Plano Mensal",
+    id: "mensal",
     price: "29",
     cents: "90",
     period: "/mês*",
@@ -19,6 +20,7 @@ const plans = [
   },
   {
     name: "Plano Anual",
+    id: "anual",
     price: "59",
     cents: "58",
     period: "/mês",
@@ -93,6 +95,7 @@ export default function Pricing() {
               </ul>
 
               <Button
+                id={plan.id}
                 className={"w-full"}
                 variant={plan.buttonVariant}
                 onClick={() => {
