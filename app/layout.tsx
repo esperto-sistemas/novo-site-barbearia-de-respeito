@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { PostHogProvider } from "../components/PostHogProvider";
-import GoogleTagManager from "../components/GoogleTagManager";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "APP Barbearia de Respeito",
@@ -45,7 +45,9 @@ export default function RootLayout({
         </noscript>
       </head>
       <body>
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+        )}
         <PostHogProvider>{children}</PostHogProvider>
         <script
           dangerouslySetInnerHTML={{
