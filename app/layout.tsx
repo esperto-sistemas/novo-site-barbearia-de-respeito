@@ -43,11 +43,11 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=990224526443802&ev=PageView&noscript=1"
           />
         </noscript>
-      </head>
-      <body>
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
         )}
+      </head>
+      <body>
         <PostHogProvider>{children}</PostHogProvider>
         <script
           dangerouslySetInnerHTML={{
