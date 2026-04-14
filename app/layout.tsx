@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script>console.log(process.env)</script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
